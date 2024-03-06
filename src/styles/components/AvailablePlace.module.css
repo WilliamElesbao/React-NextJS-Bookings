@@ -1,0 +1,52 @@
+/** @format */
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0.5rem 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+.circle {
+  background: #fd8008;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+.titleItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card > button {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.card > button:hover {
+  transform: scale(1.1);
+  background: #fd8008;
+  color: white;
+}

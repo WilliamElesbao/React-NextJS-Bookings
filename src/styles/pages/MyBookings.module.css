@@ -1,0 +1,32 @@
+/** @format */
+
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  margin: 1rem 5rem;
+}
+
+.container > h1 {
+  font-size: 2rem;
+}
+
+.btnMenu {
+  position: absolute;
+  right: 5%;
+  top: 5rem;
+}
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.myBookedItems_container {
+  /* border: 1px solid red; */
+  margin-left: 5rem;
+}

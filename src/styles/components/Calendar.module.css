@@ -1,0 +1,132 @@
+/** @format */
+
+.container {
+  /* border: 1px solid red; */
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 16px;
+  height: 70vh;
+  width: 40vw;
+}
+
+.calendarHeader {
+  background: rgb(223, 110, 6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 16px 16px 0 0;
+  color: rgb(255, 255, 255);
+}
+
+.calendarMonths {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.calendarMonths > h1 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.btnPrevAndNextMonth {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+}
+
+.btnPrevAndNextMonth > button {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+}
+
+.calendarContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.weekdayNames {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  color: black;
+  padding: 0 0.5rem;
+}
+
+.calendar {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.day {
+  width: 3rem;
+  height: 3rem;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 50%;
+}
+
+.day:hover {
+  background: rgb(223, 110, 6, 0.5);
+}
+
+.selectedDay {
+  background-color: rgb(223, 110, 6, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+.btnFooter {
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.btnFooter > button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.btnCheckAvailability {
+  border: 0;
+  background: rgb(223, 110, 6);
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.btnCheckAvailability:hover {
+  background: rgb(223, 110, 6, 0.8);
+}
+
+.weekendDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

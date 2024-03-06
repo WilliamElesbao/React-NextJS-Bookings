@@ -1,0 +1,23 @@
+/** @format */
+
+.btnMenuBkgColor {
+  background: #fd8008;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease-in-out;
+}
+
+.btnMenuBkgColor > .btnMenu {
+  color: white;
+  transition: transform 0.5s ease;
+}
+
+.btnMenuBkgColor:hover {
+  transform: scale(1.1);
+  background: orangered;
+}
